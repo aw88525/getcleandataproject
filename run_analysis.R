@@ -61,5 +61,5 @@ mean_totalset_melt <- dcast(totalset_melt, ID + Activity ~ variable, mean)
 names(mean_totalset_melt)[3:length(mean_totalset_melt)] <- 
   paste("mean of", names(mean_totalset_melt)[3:length(mean_totalset_melt)])
 
-write.table(mean_totalset_melt, file = "tidy_data.txt", sep = ",")
+write.table(mean_totalset_melt, file = "tidy_data.txt", sep = ",", row.names = FALSE)
 write.csv(mean_totalset_melt, file = "tidy_data.csv")
