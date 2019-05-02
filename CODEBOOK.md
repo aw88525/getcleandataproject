@@ -19,15 +19,15 @@ Download the dataset from the url and unzip it into the working directory
 * trainset : merged dataset of train measurement, subject ID and activity
 * totalset : merged dataset of testset and trainset
 
-# Extact only the measurements on the mean and standard deviation for each measurement
+## Extact only the measurements on the mean and standard deviation for each measurement
 * selectedset_meanstd_index : store the indexes of the mean() or std() in the names of measurement
 * selectedset : extracted subset (columns) of totalset where mean() or std() are contained in the names of measurement
 
-# Descriptive activity names to name the activities in the dataset
+## Descriptive activity names to name the activities in the dataset
 * activity_factor : a factor vector coerced from the activity in dataset matched with activity labels
 * totalset: now dataset with descriptive activity labels
 
-# create a second, independent tidy dataset
+## create a second, independent tidy dataset
 * totalset_melt : totalset melted with subject ID and Activities as rows and measurement variables as columns
 * mean_totalset_melt : tidy data set with subject ID and Activities as rows and mean of measurement variables as columns
 
